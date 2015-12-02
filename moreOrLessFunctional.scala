@@ -9,7 +9,7 @@ def getResultMessage(guess:Int, numberToGuess:Int) = guess match {
 }
 
 @tailrec
-def play(numberToGuess:Int, upperBound:Int): Unit = {
+def play(numberToGuess:Int, upperBound:Int){
     print(s"Guess a number between 0 and ${upperBound}: ")
     val guess = readInt
     val message = getResultMessage(guess, numberToGuess)
